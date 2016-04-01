@@ -1,0 +1,9 @@
+<h1>Questions and Answers</h1>
+
+{{#each model as |question|}}
+  <div>
+    {{question.author}}
+    {{question.content}}
+    {{question.notes}}
+  </div>
+{{/each}}
