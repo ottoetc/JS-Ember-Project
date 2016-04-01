@@ -1,9 +1,7 @@
 <h1>Questions and Answers</h1>
 
 {{#each model as |question|}}
-  <div>
-    {{question.author}}
-    {{question.content}}
-    {{question.notes}}
-  </div>
+  {{question-tile question=question destroyQuestion="destroyQuestion"}}
 {{/each}}
+
+{{new-question save2="save3"}}
