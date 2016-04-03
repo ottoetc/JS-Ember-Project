@@ -1,0 +1,7 @@
+<div>
+  <h3>By: {{question.author}}</h3>
+  <p><strong>Q: </strong>{{question.content}}</p>
+  <p>Notes: {{question.notes}}</p>
+  {{update-question question=question update="update"}}
+  <button {{action 'delete' question}}>Delete</button>
+</div>
