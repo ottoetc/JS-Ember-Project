@@ -1,7 +1,13 @@
 <h1>Questions and Answers</h1>
 
-{{#each model as |question|}}
+{{#each model.questions as |question|}}
   {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
 {{/each}}
 
 {{new-question save2="save3"}}
+
+<ul>
+  {{#each model.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+</ul>
