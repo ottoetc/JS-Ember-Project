@@ -1,3 +1,30 @@
-
-
-{{outlet}}
+<!-- Fixed navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      {{#link-to 'index' class="navbar-brand"}}q/a{{/link-to}}
+    </div>
+    <div class="collapse navbar-collapse" id="nav-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>{{#link-to 'index'}}about{{/link-to}}</li>
+        <li>{{#link-to 'index'}}contact{{/link-to}}</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Jumbotron -->
+<div class="jumbotron">
+  <div class="container">
+    <h1>questions/answers</h1>
+  </div>
+</div>  
+<!-- Page content -->
+<div class="container">
+  {{outlet}}
+</div>
