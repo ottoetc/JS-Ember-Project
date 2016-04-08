@@ -1,7 +1,5 @@
 {{#link-to 'question' question.id}}
   <div>
-    <h3>By: {{question.author}}</h3>
-    <p><strong>Q: </strong>{{question.content}}</p>
-    <p>Answers <span class="badge">{{answer-count question}}</span></p>
+    <h3>{{authorQuestion}} <span class="badge">  {{answer-count question}}</span></h3>
   </div>
 {{/link-to}}
