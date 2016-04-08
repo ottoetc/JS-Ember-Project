@@ -4,11 +4,11 @@
   <p>Notes: {{question.notes}}</p>
   {{update-question question=question update="update"}}
   <button class="btn btn-default" {{action 'delete' question}}>Delete</button>
-  
+
 </div>
 <div>
   <h2>Answers:</h2>
-    {{#each model.answers as |answer|}}
+    {{#each question.answers as |answer|}}
       <p>{{answer.author}}</p>
       <p>{{answer.content}}</p>
       <button {{action 'delete' answer}}>Delete</button>
